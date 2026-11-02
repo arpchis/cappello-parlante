@@ -1,15 +1,13 @@
 import streamlit as st
 
-# =================================================================
-# CONFIGURAZIONE E DESIGN IMMERSIVO
-# =================================================================
+
 st.set_page_config(
     page_title="Il Cappello Parlante di Hogwarts",
     page_icon="🎩",
     layout="centered",
 )
 
-# CSS Avanzato per un'esperienza "Premium"
+# CSS 
 st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400&family=MedievalSharp&display=swap');
@@ -248,7 +246,7 @@ def reset():
     st.rerun()
 
 # =================================================================
-# INTERFACCIA UTENTE
+# UIX
 # =================================================================
 
 domande = prepara_domande()
@@ -320,7 +318,7 @@ else:
     
     st.balloons()
     
-    # Box risultato rimpicciolito
+    # Box risultato 
     st.markdown(f"""
     <div class="final-result">
         <h1 class="result-title">{simboli[casata]} {casata.upper()} {simboli[casata]}</h1>
